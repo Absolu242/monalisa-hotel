@@ -1,0 +1,182 @@
+.rooms {
+  background-color: #fff;
+}
+
+.rooms__list {
+  padding: 5rem 0;
+}
+
+.rooms__item {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 10rem;
+}
+
+.rooms__item:nth-child() {
+  height: inherit;
+  width: inherit;
+}
+
+.rooms .room__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.rooms .room__left-type {
+  position: relative;
+}
+
+.rooms .room__left-type .type-content {
+  color: #adadad;
+  position: relative;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 62%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  width: 7rem;
+  padding: 3rem 0;
+}
+
+.rooms .room__left-type .type-content p {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  width: 30rem;
+  top: -10%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.rooms .room__left-type .type-content .index {
+  position: absolute;
+  top: 80%;
+  font-weight: 700;
+}
+
+.rooms .room__left-details {
+  width: 45%;
+}
+
+.rooms .room__left-review {
+  color: #adadad;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.rooms .room__left-title {
+  font-family: "Playfair Display", serif;
+  padding-bottom: 1rem;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.rooms .room__left-title a {
+  color: #000;
+}
+
+.rooms .room__left-price {
+  color: #adadad;
+  padding: 1.5rem 0;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.rooms .room__left-price p {
+  color: #000;
+  padding-left: 0.8rem;
+}
+
+.rooms .room__left-price p span {
+  color: #cc0000;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.rooms .room__left-desc p {
+  width: 75%;
+  color: #919191;
+  letter-spacing: 0.1rem;
+}
+
+.rooms .room__left-others {
+  padding: 1.5rem 0;
+}
+
+.rooms .room__left-others p {
+  color: #adadad;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.rooms .room__left-others p span {
+  font-weight: 500;
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.rooms .room__left-others p span.green {
+  color: #84a016;
+  font-weight: bold;
+}
+
+.rooms .room__left-others p span.red {
+  color: #cc0000;
+  font-weight: bold;
+}
+
+.rooms .room__left-more {
+  padding: 1rem 0;
+}
+
+.rooms .room__left-more button {
+  background: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.rooms .room__right {
+  width: 80%;
+  height: 450px;
+}
+
+.rooms__button {
+  padding: 3rem 0;
+}
+
+.rooms__button button {
+  padding: 1.2rem 1.8rem;
+  color: #fff;
+  background-color: #84a016;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+/*# sourceMappingURL=Rooms.css.map */

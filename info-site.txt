@@ -1,0 +1,60 @@
+fonts:
+ElegantIcons,
+Poppins Regular,
+OpenSans,
+IonIcons
+
+-main: PlayfairDispay Bold,
+-testimoanial: poppins,
+-testimonial: poppins regular, play... regular
+-testimonialname: poppins bold,
+-text:
+-phoneNum:prata semibold
+
+colors:
+-body:#f1f1f1
+-green:#84a016
+-green2:#add633
+-blue-text:#84a016
+-blue-bkg:#dbe2e3
+-card-shadow:#cfcfcf
+-round-green:#a09816
+-select:#efeeee
+-footer-black:#212020
+-footer-grey:#919191
+-grey:#adadad
+-grey2:#91919
+-grey3:#ccc
+-red:#cc0000
+
+images-size:
+home{
+main: 1920*840,
+about:431*499,
+discover-small: 170*111,
+discover-big:1075*870,
+blog: 370*275,
+contact:1075*870
+}
+
+reservat{
+room:300*242
+}
+
+room-listing{
+main:1920*630
+room:845*603
+}
+
+blog-listing{
+type-one:370*275,
+type-two:370*500
+}
+
+room{
+carousel: 1170*647
+}
+
+contact{
+main:1920*550
+}

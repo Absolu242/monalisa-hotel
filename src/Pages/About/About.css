@@ -1,0 +1,147 @@
+.about__history {
+  padding: 10rem 0;
+  background-color: #fff;
+}
+
+.about__history-title {
+  font-size: 3rem;
+}
+
+.about__history-title h2 {
+  font-family: "Playfair Display", serif;
+}
+
+.about__history-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__history-text p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  width: 60%;
+  text-align: center;
+  color: #adadad;
+}
+
+.about__history-bottom {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about__history-fact {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.about__history-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding-top: 2rem;
+}
+
+.about__history .numbers_item span {
+  font-size: 7rem;
+  font-family: "Playfair Display", serif;
+}
+
+.about__history .numbers_item p {
+  font-size: 1.4rem;
+  color: #adadad;
+}
+
+.about__testimonial {
+  height: 100%;
+}
+
+.about__testimonial .testimonial {
+  min-height: 100vh;
+}
+
+.about__testimonial .testimonial__content {
+  margin: 10rem 0;
+  background-color: #fff;
+  padding: 5rem;
+}
+
+.about__testimonial .testimonial__title p {
+  color: #adadad;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  padding-bottom: 5rem;
+  font-weight: bold;
+  position: relative;
+  top: 2rem;
+}
+
+.about__testimonial .testimonial__heading p {
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+
+.about__testimonial .testimonial__text {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__testimonial .testimonial__text p {
+  color: #919191;
+  width: 75%;
+  font-style: italic;
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
+}
+
+.about__testimonial .testimonial__stars {
+  color: #fafa4e;
+  font-size: 1.5rem;
+}
+
+.about__testimonial .testimonial__logo {
+  position: relative;
+  left: 0.2%;
+}
+
+.about__testimonial .testimonial__logo img {
+  max-width: 200px;
+}
+
+.about__testimonial .testimonial__client {
+  padding: 2rem 0;
+}
+
+.about__testimonial .testimonial__client p {
+  font-size: 1.3rem;
+}
+
+.about__testimonial .testimonial__client p span {
+  color: #adadad;
+}
+/*# sourceMappingURL=About.css.map */

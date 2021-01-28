@@ -1,0 +1,85 @@
+@import "../../css/colors.scss";
+.footer {
+    min-height: 50vh;
+    background-color: $footerBlack;
+    &__content {
+        align-items: center;
+        &-top {
+            justify-content: space-between;
+            padding: 6rem 0;
+            border-bottom: 1px solid $grey;
+            ul li {
+                font-size: 1.3rem;
+                font-weight: 600;
+                padding: 0.2rem 0;
+                a {
+                    color: $footerGrey;
+                    text-decoration: none;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+            .form {
+                color: $footerGrey;
+                font-weight: 600;
+                &-input {
+                    p {
+                        font-size: 1.4rem;
+                    }
+                    div {
+                        padding: 2rem 0;
+                        position: relative;
+                        input {
+                            font-weight: 600;
+                            background: none;
+                            border: none;
+                            border-bottom: 1px solid $footerGrey;
+                            width: 100%;
+                            padding: 1rem 0;
+                            color: $white;
+                            outline: none;
+                        }
+                        span {
+                            position: absolute;
+                            left: 90%;
+                            top: 35%;
+                            button {
+                                background: none;
+                                border: none;
+                                color: $footerGrey;
+                                cursor: pointer;
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-bottom {
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 0;
+        }
+        &-left {
+            a {
+                color: $white;
+                text-decoration: none;
+                &:hover {
+                    color: $footerGrey;
+                }
+            }
+            h2 {
+                font-family: "Playfair Display", serif;
+                font-size: 3rem;
+            }
+            p {
+                color: $grey;
+                font-size: 1.3rem;
+                position: relative;
+                top: 2rem;
+                padding-left: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.contact {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.contact__top {
+  padding-top: 3rem;
+}
+
+.contact-title {
+  padding: 2rem 0;
+}
+
+.contact-title h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+.contact-title p {
+  color: #adadad;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.contact__details-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0;
+}
+
+.contact__details-info > :not(:last-child) {
+  border-right: 1px solid #adadad;
+}
+
+.contact__details-item {
+  padding: 0 5rem;
+}
+
+.contact__details-item .icon {
+  font-size: 3rem;
+}
+
+.contact__details-item p.title {
+  padding: 1rem 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: "Playfair Display", serif;
+}
+
+.contact__details-item .details {
+  color: #adadad;
+  font-size: 1.2rem;
+}
+
+.contact__form .form-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0;
+}
+
+.contact__form .form-input {
+  width: 100%;
+}
+
+.contact__form .form-input input {
+  width: 80%;
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 1px solid #adadad;
+  background: none;
+}
+
+.contact__form .form-input input:focus {
+  color: black;
+  border-color: black;
+  outline: none;
+}
+
+.contact__form .form-input textarea {
+  width: 94%;
+  padding: 2rem 0;
+  border: none;
+  border-bottom: 1px solid #adadad;
+  background: none;
+  height: 180px;
+}
+
+.contact__form .form-input textarea:focus {
+  color: #000;
+  border-color: #000;
+  outline: none;
+}
+
+.contact__form .form-bottom {
+  width: 100%;
+  padding: 3rem 0;
+  padding-bottom: 10rem;
+}
+
+.contact__form .form-bottom button {
+  position: relative;
+  top: 3rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Contact.css.map */

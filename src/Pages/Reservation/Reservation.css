@@ -1,0 +1,290 @@
+.reservation__text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin: 2.5rem 0;
+}
+
+.reservation__rooms--content .av_room__content {
+  width: 100%;
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservation__rooms--content .av_room--left {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reservation__rooms--content .av_room--left .info-1 {
+  padding: 2rem 3rem;
+}
+
+.reservation__rooms--content .av_room--left .info-1 .name {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
+
+.reservation__rooms--content .av_room--left .info-1 .review {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+}
+
+.reservation__rooms--content .av_room--left .info-1 .status {
+  font-size: 1.5rem;
+}
+
+.reservation__rooms--content .av_room .img {
+  height: inherit;
+  width: 40%;
+}
+
+.reservation__rooms--content .av_room--right .info-2 {
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservation__rooms--content .av_room--right .info-2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-bottom: 1.5rem;
+}
+
+.reservation__rooms--content .av_room--right .info-2 div input {
+  margin-right: 1rem;
+}
+
+.reservation__rooms--content .av_room--right .info-2 div p {
+  font-size: 1.4rem;
+}
+
+.reservation__rooms--content .av_room--right .info-2 div p .red {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.reservation__rooms--content .av_room--right .info-2 div > span {
+  font-size: 1.5rem;
+}
+
+.reservation__rooms--content .av_room--right .info-2 div select {
+  margin: 0 2rem;
+  padding: 1rem 1.5rem;
+}
+
+.reservation__rooms--content .av_room--right .info-2 div button {
+  padding: 1.3rem 4rem;
+  border-radius: 3px;
+}
+
+.reservation__booking--content {
+  background-color: #fff;
+}
+
+.reservation__booking--content .bo-dates {
+  padding: 4rem 0;
+}
+
+.reservation__booking--content .bo-dates .grey {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservation__booking--content .bo-dates .grey p {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.reservation__booking--content .bo-room {
+  min-height: 13vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #adadad;
+}
+
+.reservation__booking--content .bo-room__list {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.reservation__booking--content .bo-room--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+}
+
+.reservation__booking--content .bo-room--left .img {
+  width: 25rem;
+  max-height: 12rem;
+}
+
+.reservation__booking--content .bo-room--left .info-3 {
+  padding: 1.5rem 2rem;
+  width: 100%;
+}
+
+.reservation__booking--content .bo-room--left .info-3 .name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.reservation__booking--content .bo-room--left .info-3 .name span {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.reservation__booking--content .bo-room--left .info-3 .choices {
+  padding: 2rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reservation__booking--content .bo-room--left .info-3 .choices .grey {
+  font-size: 1.4rem;
+}
+
+.reservation__booking--content .bo-room--right p {
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.reservation__booking--content .bo-room--right .red {
+  font-size: 2rem;
+}
+
+.reservation__booking--content .bo-room__pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 20vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.reservation__booking--content .bo-room__pricing span form input {
+  margin: 0 1rem;
+  padding: 1.4rem 2rem;
+  min-width: 25rem;
+  border-radius: 3px;
+  border: none;
+  color: #919191;
+  background-color: #f1f1f1;
+}
+
+.reservation__booking--content .bo-room__pricing span form button {
+  padding: 1.4rem 2rem;
+  margin: 0 1rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #adadad;
+}
+
+.reservation__booking--content .bo-room__pricing .total p {
+  font-size: 1.7rem;
+}
+
+.reservation__booking--content .bo-room__pricing .total .grey {
+  font-size: 1.3rem;
+}
+
+.reservation__booking--content .bo-room__pricing .bo-price {
+  font-size: 4rem;
+}
+
+.reservation__confirm {
+  background-color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservation__confirm--content {
+  padding: 3rem 0;
+  width: 90%;
+}
+
+.reservation__confirm--content .form__content {
+  position: relative;
+  left: 3rem !important;
+}
+
+.reservation__confirm--content .confzone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.reservation__confirm--content .confzone--pay {
+  text-align: left !important;
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+.reservation__confirm--content .confzone--pay input {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+.reservation__confirm--content .confzone--btn {
+  padding: 2rem 0;
+}
+
+.reservation__confirm--content .confzone--btn button {
+  padding: 1rem 2.5rem;
+}
+/*# sourceMappingURL=Reservation.css.map */

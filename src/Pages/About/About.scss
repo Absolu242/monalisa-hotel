@@ -1,0 +1,112 @@
+@import "../../css/colors.scss";
+.about {
+    &__history {
+        padding: 10rem 0;
+        background-color: $white;
+        &-title {
+            font-size: 3rem;
+            h2 {
+                font-family: "Playfair Display", serif;
+            }
+        }
+        &-text {
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                width: 60%;
+                text-align: center;
+                color: $grey;
+            }
+        }
+        &-bottom {
+            padding-top: 5rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &-fact {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        &-numbers {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+            padding-top: 2rem;
+        }
+        .numbers_item {
+            span {
+                font-size: 7rem;
+                font-family: "Playfair Display", serif;
+            }
+            p {
+                font-size: 1.4rem;
+                color: $grey;
+            }
+        }
+    }
+    &__testimonial {
+        height: 100%;
+        .testimonial {
+            min-height: 100vh;
+            &__content {
+                margin: 10rem 0;
+                background-color: $white;
+                padding: 5rem;
+            }
+            &__title {
+                p {
+                    color: $grey;
+                    font-size: 1.5rem;
+                    letter-spacing: 0.5rem;
+                    padding-bottom: 5rem;
+                    font-weight: bold;
+                    position: relative;
+                    top: 2rem;
+                }
+            }
+            &__heading {
+                p {
+                    font-size: 6rem;
+                    font-weight: bold;
+                    font-family: "Playfair Display", serif;
+                }
+            }
+            &__text {
+                padding: 3rem;
+                display: flex;
+                align-items: center;
+                p {
+                    color: $grey2;
+                    width: 75%;
+                    font-style: italic;
+                    font-size: 1.8rem;
+                    font-family: "Playfair Display", serif;
+                }
+            }
+            &__stars {
+                color: rgb(250, 250, 78);
+                font-size: 1.5rem;
+            }
+            &__logo {
+                img {
+                    max-width: 200px;
+                }
+                position: relative;
+                left: 0.2%;
+            }
+            &__client {
+                padding: 2rem 0;
+                p {
+                    font-size: 1.3rem;
+                    span {
+                        color: $grey;
+                    }
+                }
+            }
+        }
+    }
+}
