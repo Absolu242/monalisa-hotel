@@ -1,0 +1,52 @@
+.blog {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.blog__content--filter {
+  padding: 2rem 0;
+}
+
+.blog__content--filter .filter button {
+  padding: 1rem 1.5rem;
+  margin: 0 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+
+.blog__content--filter .filter button:hover {
+  color: #919191;
+}
+
+.blog__content--posts {
+  height: 100%;
+  gap: 0;
+  margin: 2rem 0;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.blog__content--posts .home__blog--item {
+  margin-bottom: 2rem;
+  min-height: 400px;
+}
+
+.blog__content--posts .home__blog--item .img {
+  height: 50%;
+}
+
+.blog__content .blog__button {
+  position: relative;
+  top: 2rem;
+  padding: 2rem 0;
+  height: 15rem;
+}
+
+.blog__content .blog__button button {
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+}
+/*# sourceMappingURL=Blog.css.map */
