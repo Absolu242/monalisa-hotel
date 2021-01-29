@@ -3,10 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 $black: #000;
@@ -15,7 +15,7 @@ $body: #f1f1f1;
 $green: #84a016;
 $green2: #add633;
 $blueText: #84a016;
-$blueBkg: #dbe2e3;
+$blueBkg: #a0d6dd;
 $cardShadow: #cfcfcf;
 $roundGreen: #a09816;
 $select: #efeeee;
@@ -26,310 +26,298 @@ $grey2: #919191;
 $grey3: #ccc;
 $red: #cc0000;
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 body {
-    background-color: $body;
+  background-color: $body;
 }
-
 
 /**base**/
 
 ul,
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 /*color*/
 
 .grey {
-    color: $grey;
+  color: $grey;
 }
 
 .grey2 {
-    color: $grey2;
+  color: $grey2;
 }
 
 .green {
-    color: $green !important;
+  color: $green !important;
 }
 
 .green2 {
-    color: $green2 !important;
+  color: $green2 !important;
 }
 
 .white {
-    color: $white !important;
+  color: $white !important;
 }
 
 .black {
-    color: $black !important;
+  color: $black !important;
 }
 
 .red {
-    color: $red !important;
+  color: $red !important;
 }
-
 
 /*bkg*/
 
 .bg-white {
-    background-color: $white;
+  background-color: $white;
 }
 
 .bg-grey {
-    background-color: $grey;
+  background-color: $grey;
 }
 
 .bg {
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 /*Buttons*/
 
 .btn {
-    border: none;
-    cursor: pointer;
-    background: none;
-    outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  outline: none;
 }
 
 .btn-round {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .btn-white {
-    background-color: $white;
-    color: $black;
+  background-color: $white;
+  color: $black;
 }
 
 .btn-black {
-    background-color: $black;
-    color: $white;
+  background-color: $black;
+  color: $white;
 }
 
 .btn-green {
-    background-color: $green;
-    color: $white;
+  background-color: $green;
+  color: $white;
 }
 
 .btn-grey {
-    background-color: $grey;
-    color: $white;
+  background-color: $grey;
+  color: $white;
 }
-
 
 /*Layout*/
 
 .container {
-    max-width: 1115px;
-    margin: 0 auto;
+  max-width: 1115px;
+  margin: 0 auto;
 }
 
 .flex {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .grid {
-    display: grid;
-    gap: 20px;
-    justify-content: center;
-    height: 100%;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  height: 100%;
 }
 
 .grid-2 {
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-3 {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-4 {
-    grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .text-center {
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
 }
-
 
 /*Font-size*/
 
 .f-lead {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .f-xs {
-    font-size: 1.2rem !important;
+  font-size: 1.2rem !important;
 }
 
 .f-sm {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .f-md {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .f-l {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .f-xl {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 .f-xxl {
-    font-size: 5rem;
+  font-size: 5rem;
 }
-
 
 /*Font-weight*/
 
 .f-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .f-lighter {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 .f-bolder {
-    font-weight: bolder;
+  font-weight: bolder;
 }
-
 
 /*Margin  Y*/
 
 .my-1 {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .my-2 {
-    margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 
 .my-3 {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .my-4 {
-    margin: 3rem 0;
+  margin: 3rem 0;
 }
 
 .my-5 {
-    margin: 4rem 0;
+  margin: 4rem 0;
 }
-
 
 /**Full margin**/
 
 .m-1 {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .m-2 {
-    margin: 1.5rem;
+  margin: 1.5rem;
 }
 
 .m-3 {
-    margin: 2rem;
+  margin: 2rem;
 }
 
 .m-4 {
-    margin: 3rem;
+  margin: 3rem;
 }
 
 .m-5 {
-    margin: 4rem;
+  margin: 4rem;
 }
-
 
 /*Padding  Y*/
 
 .py-1 {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 .py-2 {
-    padding: 1.5rem 0;
+  padding: 1.5rem 0;
 }
 
 .py-3 {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 .py-4 {
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 .py-5 {
-    padding: 4rem 0;
+  padding: 4rem 0;
 }
-
 
 /**Full padding**/
 
 .p-1 {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .p-2 {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .p-3 {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .p-4 {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 .p-5 {
-    padding: 4rem;
+  padding: 4rem;
 }
-
 
 /*heihts*/
 
 .h-2 {
-    min-height: 200px;
+  min-height: 200px;
 }
 
 .h-3 {
-    height: 300px;
+  height: 300px;
 }
 
 .h-4 {
-    min-height: 400px;
+  min-height: 400px;
 }
 
 .h-5 {
-    min-height: 500px;
+  min-height: 500px;
 }
 
 .h-6 {
-    min-height: 600px;
+  min-height: 600px;
 }
 
 .h-full {
-    min-height: 100vh;
+  min-height: 100vh;
 }

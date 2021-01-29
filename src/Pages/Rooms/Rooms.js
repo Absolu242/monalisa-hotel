@@ -30,7 +30,7 @@ export default function Rooms({ match }) {
               .map((room, i) => {
                 const check = i % 2
                 return (
-                  <div className={check === 0 ? "rooms__item" : "rooms__item reverse"}>
+                  <div key={i} className={check === 0 ? "rooms__item" : "rooms__item reverse"}>
                     <div className={check === 0 ? "room__left" : "room__left reverse"}>
                       <div className="room__left-type">
                         <div className="type-content">

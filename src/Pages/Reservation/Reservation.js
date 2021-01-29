@@ -1,10 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
 import Header from "../../Components/Header/Header"
 import "./Reservation.css"
 import bkg from "../../data/images/headers/header5.jpg"
+import DatePick from "../../Components/Date/DatePick"
 
 export default function Reservation({ match }) {
   const path = match.path
+
+  const [startDay, setStartDay] = useState("")
+  const [startMonth, setStartMonth] = useState("")
+
+  const [endDay, setEndDay] = useState("")
+  const [endMonth, setEndMonth] = useState("")
+
+  // const [startDate, setStartDate] = useState("")
+  // const [endDate, setEndDate] = useState("")
 
   const headerInfo = {
     title: "",
@@ -13,6 +23,8 @@ export default function Reservation({ match }) {
     height: "60vh",
     path: path,
   }
+
+  const months = ["Jan", "Fev", "Mar", "Apr", "Mai", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
   return (
     <div>
@@ -24,7 +36,51 @@ export default function Reservation({ match }) {
           </div>
 
           <div className="reservation__form">
-            <div className="form__content">form here</div>
+            <div className="form__content">
+              <form action="" className="reserv-form">
+                <div className="reserv-input bar">
+                  <span className="field-name">CHECK-IN</span>
+                  <div className="field-info">
+                    {" "}
+                    <span className="day">{startDay}</span>
+                    {months
+                      .filter((m, i) => i === startMonth - 1)
+                      .map((n) => (
+                        <span className="month">/ {n}</span>
+                      ))}
+                  </div>
+                </div>
+                <div className="reserv-input bar">
+                  <span className="field-name">CHECK-OUT</span>
+                  <div className="field-info">
+                    {" "}
+                    <span className="day">{endDay}</span>
+                    {months
+                      .filter((m, i) => i === endMonth - 1)
+                      .map((n) => (
+                        <span className="month">/ {n}</span>
+                      ))}
+                  </div>
+                </div>
+                <div className="reserv-input">
+                  <span className="field-name">GUESTS</span>
+                  <div className="field-info">
+                    {" "}
+                    <span className="day">3</span>
+                  </div>
+                </div>
+                <div className="reserv-input submit">
+                  <span>
+                    {" "}
+                    <p className="field-message">Have a promotion code?</p>
+                    <button className="btn btn-green" type="submit">
+                      CHECK AVAILABILITY
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+            <DatePick startMth={setStartMonth} startDy={setStartDay} endDay={setEndDay} endMonth={setEndMonth} />
           </div>
 
           <div className="reservation__rooms">

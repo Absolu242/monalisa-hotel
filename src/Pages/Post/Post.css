@@ -1,0 +1,168 @@
+.post__container {
+  position: relative;
+  top: -10rem;
+}
+
+.post__content {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 5rem 3rem;
+}
+
+.post__title {
+  text-align: center;
+}
+
+.post__title h1 {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+}
+
+.post__title span {
+  position: relative;
+  display: block;
+  padding: 3rem 0 5rem 0;
+  font-size: 1.2rem;
+}
+
+.post__title span small {
+  font-size: 1.2rem;
+}
+
+.post__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.post__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post__author img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 2rem;
+}
+
+.post__author .author__name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+}
+
+.post__author .grey {
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+
+.post__text {
+  font-size: 1.3rem;
+}
+
+.post__text p {
+  padding: 1rem 0;
+}
+
+.post__share {
+  padding: 2rem 0;
+}
+
+.post__share > span {
+  font-family: "Playfair Display", serif;
+  padding-right: 1rem;
+}
+
+.post__share span a {
+  color: #919191;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+.post__share span a:hover {
+  color: #cc0000;
+}
+
+.post__related {
+  padding-top: 3rem;
+}
+
+.post__related--title {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.post__related--title h2 {
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
+}
+
+.post__related--content {
+  padding: 2rem 0;
+}
+
+.post__related--content .home__blog--item {
+  padding: 0;
+}
+
+.post__related--content .home__blog--item .img {
+  height: 50%;
+}
+
+.post__related .comment {
+  width: 100%;
+}
+
+.post__related .comment .review--item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0;
+}
+
+.post__related .comment .review--item .img-client {
+  padding-right: 1rem;
+}
+
+.post__related .comment .review--item .img-client img {
+  width: 50px;
+  height: 50px;
+}
+
+.post__related .comment .review--item .info {
+  width: 100%;
+  padding: 1rem;
+  background-color: #ccc;
+}
+
+.post__related .comment__form .contact__form .form-input input {
+  width: 90%;
+}
+
+.post__related .comment__form .contact__form .form-input textarea {
+  width: 97%;
+}
+
+.post__related .comment__form .confzone--btn button {
+  padding: 1rem 1.5rem;
+  border-radius: 2px;
+}
+/*# sourceMappingURL=Post.css.map */

@@ -32,7 +32,9 @@ export default function Header({ info }) {
               <h1>{text}</h1>
             </div>
           )}
-          {path !== "/" ? (
+          {path === "" ? (
+            ""
+          ) : path !== "/" ? (
             <div className="header__content-title">
               <p className="grey">
                 {" "}

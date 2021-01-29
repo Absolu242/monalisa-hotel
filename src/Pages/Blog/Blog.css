@@ -27,6 +27,12 @@
       grid-template-rows: auto auto;
 }
 
+.blog__content--posts .empty {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 39%;
+}
+
 .blog__content--posts .home__blog--item {
   margin-bottom: 2rem;
   min-height: 400px;
