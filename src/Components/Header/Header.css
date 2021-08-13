@@ -9,6 +9,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin-top: 9;
 }
 
 .header__content {
@@ -31,11 +32,35 @@
   width: 100%;
 }
 
+@media (max-width: 765px) {
+  .header__content-text {
+    font-size: 2rem;
+  }
+}
+
 .header__content .bar {
   position: absolute;
   width: 1px;
   height: 13rem;
   background-color: #adadad;
   top: 90%;
+}
+
+@media (max-width: 765px) {
+  .header {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    min-height: 40vh !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    min-height: 70vh !important;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

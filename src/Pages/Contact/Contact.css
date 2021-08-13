@@ -33,8 +33,18 @@
   border-right: 1px solid #adadad;
 }
 
+@media (max-width: 765px) {
+  .contact__details-info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact__details-info > :not(:last-child) {
+    border-right: none;
+  }
+}
+
 .contact__details-item {
-  padding: 0 5rem;
+  padding: 1rem 5rem;
 }
 
 .contact__details-item .icon {
@@ -53,12 +63,25 @@
   font-size: 1.2rem;
 }
 
+@media (max-width: 765px) {
+  .contact__details {
+    padding: 0 2rem;
+  }
+}
+
 .contact__form .form-top {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1rem 0;
+}
+
+@media (max-width: 765px) {
+  .contact__form .form-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .contact__form .form-input {
@@ -77,6 +100,13 @@
   color: black;
   border-color: black;
   outline: none;
+}
+
+@media (max-width: 765px) {
+  .contact__form .form-input input {
+    width: 100%;
+    margin: 1rem 0;
+  }
 }
 
 .contact__form .form-input textarea {
@@ -107,5 +137,11 @@
   border: none;
   border-bottom: 1px solid #000;
   cursor: pointer;
+}
+
+@media (max-width: 765px) {
+  .contact__form {
+    padding: 0 2rem;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

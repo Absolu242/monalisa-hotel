@@ -19,6 +19,12 @@
                 text-align: center;
                 color: $grey;
             }
+
+            @media(max-width:765px){
+                p{
+                    width:80%;
+                }
+            }
         }
         &-bottom {
             padding-top: 5rem;
@@ -36,6 +42,11 @@
             align-items: center;
             width: 50%;
             padding-top: 2rem;
+
+            @media(max-width:765px){
+                align-items: center;
+            flex-direction: column;
+            }
         }
         .numbers_item {
             span {
@@ -74,6 +85,12 @@
                     font-weight: bold;
                     font-family: "Playfair Display", serif;
                 }
+
+                @media(max-width:765px){
+                   p{
+                    font-size: 4rem;
+                   }
+                }
             }
             &__text {
                 padding: 3rem;
@@ -85,6 +102,15 @@
                     font-style: italic;
                     font-size: 1.8rem;
                     font-family: "Playfair Display", serif;
+                }
+
+                @media(max-width:765px){
+
+                    padding:3rem 0;
+
+                    p{
+                        width: 100%;
+                    }
                 }
             }
             &__stars {

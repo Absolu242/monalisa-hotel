@@ -1,98 +1,125 @@
 .singleRoom {
-    .room {
-        &__am--list {
-            display: flex;
-            justify-content: space-between;
-            min-height: 60vh;
-            padding: 4rem 0;
-            ul {
-                font-size: 1.5rem;
-                li {
-                    padding: 0.7rem 0;
-                }
-            }
+  .room {
+    &__am--list {
+      display: flex;
+      justify-content: space-between;
+      //min-height: 60vh;
+      padding: 4rem 0;
+      ul {
+        font-size: 1.5rem;
+        li {
+          padding: 0.7rem 0;
         }
-        &__sectionReview--content {
-            position: relative;
-            min-height: 30vh;
-            padding: 10rem 0;
-            .review--item {
-                position: relative;
-                display: flex;
-                height: inherit;
-                .img {
-                    height: 80px;
-                    width: 100px;
-                }
-                .info {
-                    padding: 0.6rem 1rem;
-                    margin-left: 2rem;
-                    background-color: #f1f1f1;
-                    height: fit-content;
-                    width: 100%;
-                    .text {
-                        padding: 1rem 0;
-                    }
-                }
-            }
-        }
-        &__book {
-            position: relative;
-            min-height: 20vh;
-            button {
-                padding: 1rem 4.5rem;
-                border-radius: 3px;
-                cursor: pointer !important;
-            }
-        }
-        &__card--list {
-            display: flex;
-            justify-content: space-between;
-        }
-        &__card--item {}
-        &__left {
-            .img {
-                width: 30rem;
-                height: 200px;
-            }
-            &-details {
-                padding: 2rem;
-                background-color: #fff;
-            }
-            &-title {
-                a {
-                    font-weight: bold;
-                    color: #000;
-                    font-size: 1.8rem;
-                    font-family: "Playfair Display", serif;
-                    span {
-                        padding: 0 0.5rem;
-                    }
-                }
-            }
-            &-review {
-                font-size: 1.2rem;
-            }
-            &-others {
-                padding: 1.3rem 0;
-                font-size: 1.4rem;
-                p {
-                    color: #adadad;
-                }
-            }
-            &-more {
-                display: flex;
-                justify-content: space-between;
-                padding: 1rem 0;
-                border-top: 1px solid #adadad;
-                align-items: center;
-                p {
-                    font-size: 1.3rem;
-                }
-            }
-        }
+      }
+
+      @media (max-width: 768px) {
+        padding: 4rem 1rem;
+      }
     }
-    .home__blog {
-        margin-bottom: 10rem;
+    &__sectionReview--content {
+      position: relative;
+      min-height: 10rem;
+      padding: 2rem 0;
+      .review--item {
+        position: relative;
+        display: flex;
+        height: inherit;
+        .img {
+          height: 80px;
+          width: 100px;
+        }
+        .info {
+          padding: 0.6rem 1rem;
+          margin-left: 2rem;
+          background-color: #f1f1f1;
+          height: fit-content;
+          width: 100%;
+          .text {
+            padding: 1rem 0;
+          }
+        }
+      }
     }
+    &__book {
+      position: relative;
+      min-height: 20vh;
+      button {
+        padding: 1rem 4.5rem;
+        border-radius: 3px;
+        cursor: pointer !important;
+      }
+    }
+    &__card--list {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &__card--item {
+      max-width: 300px;
+      padding-bottom: 2rem;
+    }
+    &__left {
+      .img {
+        width: 30rem;
+        height: 200px;
+      }
+      &-details {
+        padding: 2rem;
+        background-color: #fff;
+      }
+      &-title {
+        a {
+          font-weight: bold;
+          color: #000;
+          font-size: 1.8rem;
+          font-family: "Playfair Display", serif;
+          span {
+            padding: 0 0.5rem;
+          }
+        }
+      }
+      &-review {
+        font-size: 1.2rem;
+      }
+      &-others {
+        padding: 1.3rem 0;
+        font-size: 1.4rem;
+        p {
+          color: #adadad;
+        }
+      }
+      &-more {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-top: 1px solid #adadad;
+        align-items: center;
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    &__slide {
+      display: flex;
+      justify-content: center;
+    }
+    &__images {
+      height: 50rem;
+      width: 800px;
+      background-size: cover;
+
+      @media (max-width: 768px) {
+        width: 300px;
+        height: 200px;
+      }
+    }
+  }
+  .home__blog {
+    margin-bottom: 10rem;
+  }
 }

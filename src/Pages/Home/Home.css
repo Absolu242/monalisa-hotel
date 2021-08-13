@@ -4,8 +4,14 @@
 
 .home__about--content {
   padding: 8rem 3rem;
-  max-height: 100vh;
+  min-height: 100vh;
   padding-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .home__about--content {
+    min-height: 50vh;
+  }
 }
 
 .home__about--title {
@@ -27,6 +33,15 @@
           align-items: baseline;
   min-height: 40vh;
   padding: 5rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .home__about--main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .home__about--phone {
@@ -57,6 +72,12 @@
   width: 25rem;
 }
 
+@media (max-width: 1024px) {
+  .home__about--middle .img {
+    display: none;
+  }
+}
+
 .home__about--middle .text {
   width: 50rem;
   padding: 0 3rem;
@@ -75,11 +96,25 @@
 .home__about--middle .text h1 {
   font-size: 3.5rem;
   font-family: "Playfair Display", serif;
+  padding: 1rem 0;
 }
 
 .home__about--middle .text p {
   color: #adadad;
   font-size: 1.3rem;
+  padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .home__about--middle {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home__about--middle .img {
+    display: none;
+  }
 }
 
 .home__show--content {
@@ -90,6 +125,7 @@
   width: 100%;
   -ms-grid-rows: 100vh;
       grid-template-rows: 100vh;
+  min-height: 100vh;
 }
 
 .home__show--content .left {
@@ -104,6 +140,7 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
+  min-height: inherit;
 }
 
 .home__show--content .left__content {
@@ -145,6 +182,19 @@
   background-color: #212020;
 }
 
+@media (max-width: 1024px) {
+  .home__show--content .left__content--list {
+    height: 16vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__show--content .left__content--list {
+    min-height: 16vh;
+    height: 45vh;
+  }
+}
+
 .home__show--content .left__content--item {
   height: 10rem;
   width: 100%;
@@ -183,6 +233,7 @@
 }
 
 .home__show--content .right {
+  min-height: inherit;
   width: 100%;
   height: 100%;
 }
@@ -216,8 +267,33 @@
   font-family: "Playfair Display", serif;
 }
 
+@media (max-width: 1024px) {
+  .home__show--content {
+    min-height: 40vh;
+    -ms-grid-rows: 40vh;
+        grid-template-rows: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__show--content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 200px 1fr;
+        grid-template-rows: 200px 1fr;
+    min-height: 100vh;
+  }
+  .home__show--content .left__content {
+    width: 70%;
+  }
+  .home__show--content .right {
+    display: none;
+  }
+}
+
 .home__blog {
   width: 100%;
+  min-height: 100vh;
 }
 
 .home__blog--content {
@@ -248,22 +324,34 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  min-height: inherit;
+}
+
+@media (max-width: 768px) {
+  .home__blog--list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .home__blog--item {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 30rem;
+  position: relative;
+  width: 35rem;
+  min-height: 30rem;
   padding: 0 3rem;
+  margin-bottom: 2rem;
 }
 
 .home__blog--item .img {
-  height: 70%;
+  height: 20rem;
   width: 100%;
 }
 
 .home__blog--item .info {
+  height: inherit;
   position: relative;
   background-color: #fff;
   padding: 1rem;
@@ -301,6 +389,18 @@
   color: #000;
 }
 
+@media (max-width: 1024px) {
+  .home__blog {
+    min-height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__blog {
+    min-height: 100vh;
+  }
+}
+
 .home__contact {
   background-color: #fff;
 }
@@ -313,6 +413,7 @@
       grid-template-rows: auto;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
 }
 
 .home__contact--content .left {
@@ -398,5 +499,25 @@
   font-size: 3.5rem;
   font-family: "Playfair Display", serif;
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .home__contact--content {
+    min-height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__contact--content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    min-height: 100vh;
+  }
+  .home__contact--content .left {
+    display: none;
+  }
+  .home__contact--content .right__content {
+    padding: 5rem;
+  }
 }
 /*# sourceMappingURL=Home.css.map */

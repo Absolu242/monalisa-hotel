@@ -6,7 +6,7 @@ import Blog from "./Pages/Blog/Blog"
 import Post from "./Pages/Post/Post"
 import Contact from "./Pages/Contact/Contact"
 import Home from "./Pages/Home/Home"
-import Reservation from "./Pages/Reservation/Reservation"
+//import Reservation from "./Pages/Reservation/Reservation"
 import Room from "./Pages/Room/Room"
 export default function App() {
   return (
@@ -15,12 +15,12 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/rooms" component={Rooms} />
           <Route path="/rooms/:roomId" component={Room} />
+          <Route path="/blog/:postId" component={Post} />
+          <Route path="/rooms" component={Rooms} />
           <Route path="/blog" component={Blog} />
-          <Route path="/blog:postId" component={Post} />
           <Route path="/contact" component={Contact} />
-          <Route path="/reservation" component={Reservation} />
+          {/* <Route path="/" component={Home} /> */}
         </Switch>
       </Layout>
     </BrowserRouter>

@@ -18,15 +18,25 @@
         }
     }
     &__details {
+
+
         &-info {
             display: flex;
             padding: 2rem 0;
             &> :not(:last-child) {
                 border-right: 1px solid $grey;
             }
+
+            @media(max-width:765px){
+                flex-wrap: wrap;
+
+                &> :not(:last-child) {
+                    border-right: none;
+                }
+            }
         }
         &-item {
-            padding: 0 5rem;
+            padding: 1rem 5rem;
             .icon {
                 font-size: 3rem;
             }
@@ -40,6 +50,11 @@
                 color: $grey;
                 font-size: 1.2rem;
             }
+
+        }
+
+        @media(max-width:765px){
+            padding:0 2rem;
         }
     }
     &__form {
@@ -48,6 +63,12 @@
                 width: 100%;
                 display: flex;
                 padding: 1rem 0;
+
+                @media(max-width:765px){
+                    flex-wrap: wrap;
+    
+                   
+                }
             }
             &-input {
                 width: 100%;
@@ -61,6 +82,11 @@
                         color: black;
                         border-color: black;
                         outline: none;
+                    }
+
+                    @media(max-width:765px){
+                        width:100%;
+                      margin:1rem 0;
                     }
                 }
                 textarea {
@@ -90,6 +116,10 @@
                     cursor: pointer;
                 }
             }
+        }
+
+        @media(max-width:765px){
+            padding:0 2rem;
         }
     }
 }

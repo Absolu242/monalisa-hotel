@@ -1,8 +1,12 @@
+import img1 from "./images/blog/blog1.jpg"
+import img2 from "./images/blog/blog2.jpg"
+import img3 from "./images/blog/blog3.jpg"
+
 export const posts = [
   {
     id: "1",
     title: "Five reason to stay at the monalisa hotel",
-    image: "",
+    image: img1,
     date: "june, 24th 2019",
     category: "lifestyle",
     author: {
@@ -33,7 +37,7 @@ export const posts = [
   {
     id: "2",
     title: "Monalisa Hotel in top 5 best hotel from TripAdvisor magazine",
-    image: "",
+    image: img2,
     date: "june, 15th 2019",
     category: "business",
     author: {
@@ -64,7 +68,7 @@ export const posts = [
   {
     id: "3",
     title: "Discover activities interested in Monalisa",
-    image: "",
+    image: img3,
     date: "May, 08th 2020",
     category: "entertaiment",
     author: {
@@ -95,7 +99,7 @@ export const posts = [
   {
     id: "4",
     title: "Are you ready to enjoy your summer with our Monalisa",
-    image: "",
+    image: img1,
     date: "May, 04th 2019",
     category: "lifestyle",
     author: {
@@ -126,7 +130,7 @@ export const posts = [
   {
     id: "5",
     title: "Experience romantic space just have only at Monalisa hotel",
-    image: "",
+    image: img2,
     date: "April, 24th 2018",
     category: "other",
     author: {
@@ -157,7 +161,7 @@ export const posts = [
   {
     id: "6",
     title: "Over 400 foods for traveler stay at Monalisa hotel ",
-    image: "",
+    image: img3,
     date: "April, 17th 2019",
     category: "other",
     author: {

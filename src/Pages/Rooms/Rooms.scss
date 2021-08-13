@@ -1,140 +1,163 @@
 @import "../../css/colors.scss";
 .rooms {
-    background-color: $white;
-    &__list {
-        padding: 5rem 0;
+  background-color: $white;
+  &__list {
+    padding: 5rem 0;
+  }
+  &__item {
+    min-height: 500px;
+    display: flex;
+    width: 100%;
+    margin-top: 10rem;
+    &:nth-child() {
+      height: inherit;
+      width: inherit;
     }
-    &__item {
-        height: 500px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      min-height: 100vh;
+      justify-content: center;
+    }
+  }
+  .room {
+    &__left {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      &-type {
+        position: relative;
+        .type-content {
+          color: $grey;
+          position: relative;
+          border: 1px solid;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 62%;
+          align-items: center;
+          font-size: 1.5rem;
+          width: 7rem;
+          padding: 3rem 0;
+          p {
+            transform: rotate(-90deg);
+            position: absolute;
+            width: 30rem;
+            top: -10%;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+          .index {
+            position: absolute;
+            top: 80%;
+            font-weight: 700;
+          }
+        }
+      }
+      &-details {
+        width: 45%;
+      }
+      &-review {
+        color: $grey;
+        padding-bottom: 0.5rem;
+        font-size: 1.2rem;
+      }
+      &-title {
+        font-family: "Playfair Display", serif;
+        padding-bottom: 1rem;
+        font-size: 4.5rem;
+        font-weight: bold;
+        a {
+          color: #000;
+        }
+      }
+      &-price {
+        color: $grey;
+        padding: 1.5rem 0;
+        font-size: 1.4rem;
         display: flex;
-        width: 100%;
-        margin-top: 10rem;
-        &:nth-child() {
-            height: inherit;
-            width: inherit;
+        align-items: baseline;
+        p {
+          color: $black;
+          padding-left: 0.8rem;
+          span {
+            color: $red;
+            font-size: 2.5rem;
+            font-weight: bold;
+          }
         }
-    }
-    .room {
-        &__left {
-            display: flex;
-            width: 100%;
-            justify-content: space-evenly;
-            &-type {
-                position: relative;
-                .type-content {
-                    color: $grey;
-                    position: relative;
-                    border: 1px solid;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    height: 62%;
-                    align-items: center;
-                    font-size: 1.5rem;
-                    width: 7rem;
-                    padding: 3rem 0;
-                    p {
-                        transform: rotate(-90deg);
-                        position: absolute;
-                        width: 30rem;
-                        top: -10%;
-                        text-transform: uppercase;
-                        font-size: 1.2rem;
-                        font-weight: 600;
-                    }
-                    .index {
-                        position: absolute;
-                        top: 80%;
-                        font-weight: 700;
-                    }
-                }
-            }
-            &-details {
-                width: 45%;
-            }
-            &-review {
-                color: $grey;
-                padding-bottom: 0.5rem;
-                font-size: 1.2rem;
-            }
-            &-title {
-                font-family: "Playfair Display", serif;
-                padding-bottom: 1rem;
-                font-size: 4.5rem;
-                font-weight: bold;
-                a {
-                    color: #000;
-                }
-            }
-            &-price {
-                color: $grey;
-                padding: 1.5rem 0;
-                font-size: 1.4rem;
-                display: flex;
-                align-items: baseline;
-                p {
-                    color: $black;
-                    padding-left: 0.8rem;
-                    span {
-                        color: $red;
-                        font-size: 2.5rem;
-                        font-weight: bold;
-                    }
-                }
-            }
-            &-desc {
-                p {
-                    width: 75%;
-                    color: $footerGrey;
-                    letter-spacing: 0.1rem;
-                }
-            }
-            &-others {
-                padding: 1.5rem 0;
-                p {
-                    color: $grey;
-                    font-weight: 600;
-                    font-size: 1.2rem;
-                    span {
-                        font-weight: 500;
-                        color: $black;
-                        font-size: 1.3rem;
-                        &.green {
-                            color: $green;
-                            font-weight: bold;
-                        }
-                        &.red {
-                            color: $red;
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-            &-more {
-                padding: 1rem 0;
-                button {
-                    background: none;
-                    font-weight: bold;
-                    border: none;
-                    cursor: pointer;
-                }
-            }
+      }
+      &-desc {
+        p {
+          width: 75%;
+          color: $footerGrey;
+          letter-spacing: 0.1rem;
         }
-        &__right {
-            width: 80%;
-            height: 450px;
+      }
+      &-others {
+        padding: 1.5rem 0;
+        p {
+          color: $grey;
+          font-weight: 600;
+          font-size: 1.2rem;
+          span {
+            font-weight: 500;
+            color: $black;
+            font-size: 1.3rem;
+            &.green {
+              color: $green;
+              font-weight: bold;
+            }
+            &.red {
+              color: $red;
+              font-weight: bold;
+            }
+          }
         }
-    }
-    &__button {
-        padding: 3rem 0;
+      }
+      &-more {
+        padding: 1rem 0;
         button {
-            padding: 1.2rem 1.8rem;
-            color: $white;
-            background-color: $green;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-            outline: none;
+          background: none;
+          font-weight: bold;
+          border: none;
+          cursor: pointer;
         }
+      }
+
+      @media (max-width: 768px) {
+        order: 2;
+        padding: 4rem;
+        justify-content: space-between;
+
+        &-details {
+          width: 70%;
+        }
+      }
     }
+    &__right {
+      width: 80%;
+      min-height: 450px;
+
+      @media (max-width: 768px) {
+        order: 1;
+        width: 80%;
+        padding: 2rem 0;
+        min-height: 250px;
+      }
+    }
+  }
+  &__button {
+    padding: 3rem 0;
+    button {
+      padding: 1.2rem 1.8rem;
+      color: $white;
+      background-color: $green;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      outline: none;
+    }
+  }
 }

@@ -45,6 +45,18 @@
   border-bottom: 1px solid #ccc;
 }
 
+@media (max-width: 768px) {
+  .post__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .post__author {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +64,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0.5rem 0;
 }
 
 .post__author img {
@@ -120,6 +133,7 @@
 
 .post__related--content .home__blog--item {
   padding: 0;
+  max-width: 250px;
 }
 
 .post__related--content .home__blog--item .img {

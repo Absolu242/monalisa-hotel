@@ -7,6 +7,10 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+
+  a {
+    color: #000;
+  }
 }
 
 $black: #000;
@@ -127,7 +131,7 @@ a {
 /*Layout*/
 
 .container {
-  max-width: 1115px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -149,14 +153,30 @@ a {
 
 .grid-2 {
   grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 765px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 765px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-4 {
   grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 765px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .text-center {

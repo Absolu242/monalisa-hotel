@@ -11,7 +11,7 @@ class DatePick extends Component {
     this.state = {
       startDate: moment(),
       endDate: moment().add(7, "days"),
-      focusedInput: null,
+      focusedInput: this.props.onFocus,
       dateFormat: "DD/MM",
     }
   }
