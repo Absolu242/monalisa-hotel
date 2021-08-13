@@ -153,7 +153,6 @@ export default function Room({ match }) {
                 {rooms
                   .filter((item, i) => i < 3)
                   .map((room, i) => {
-                    const check = i % 2
                     return (
                       <div className='room__card--item'>
                         <div className='room__left'>

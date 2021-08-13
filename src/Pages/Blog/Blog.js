@@ -4,8 +4,6 @@ import React, { useState } from "react"
 import Header from "../../Components/Header/Header"
 import PostCard from "../../Components/PostCard/PostCard"
 
-//assets
-import bkg from "../../data/images/rooms/room1.jpg"
 
 //data
 import { posts } from "../../data/monaPosts"

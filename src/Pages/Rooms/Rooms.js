@@ -5,7 +5,6 @@ import { Link } from "react-router-dom"
 import Header from "../../Components/Header/Header"
 
 //assets
-import logo from "../../data/images/tripAdvisor.png"
 import bkg from "../../data/images/headers/header5.jpg"
 
 //data

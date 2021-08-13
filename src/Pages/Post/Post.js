@@ -121,19 +121,19 @@ export default function Post({ match }) {
             <div className='post__share'>
               <span className='f-bold  f-sm'>Shares : </span>
               <span className='grey'>
-                <a href='#'>
+                <a href='https://twitter.com/'>
                   {" "}
                   <i className='fab fa-twitter    '></i>
                 </a>
-                <a href='#'>
+                <a href='https://facebook.com/'>
                   {" "}
                   <i className='fab fa-facebook-f    '></i>
                 </a>
-                <a href='#'>
+                <a href='https://google.com/'>
                   {" "}
                   <i className='fab fa-google-plus    '></i>
                 </a>
-                <a href='#'>
+                <a href='https://instagram.com'>
                   {" "}
                   <i className='fab fa-instagram    '></i>
                 </a>
@@ -175,7 +175,7 @@ export default function Post({ match }) {
               <div className='post__related--content comment'>
                 <div className='review--item'>
                   <div className='img-client '>
-                    <img src={bkg} alt='client' srcset='' />
+                    <img src={bkg} alt='client' />
                   </div>
                   <div className='info'>
                     <span className='name'>
@@ -201,7 +201,7 @@ export default function Post({ match }) {
 
                 <div className='review--item'>
                   <div className='img-client '>
-                    <img src={bkg} alt='client' srcset='' />
+                    <img src={bkg} alt='client' />
                   </div>
                   <div className='info'>
                     <span className='name'>

@@ -84,13 +84,13 @@ export default function Footer() {
             </div>
             <div className="footer__content-right">
               <span className="white">
-                <a href="#" className="white">
+                <a href="https://twitter.com" className="white">
                   <i className="fas fa-twitter    "></i>
                 </a>
-                <a href="#">
+                <a href="https://facebook.com">
                   <i className="fa fab-facebook" />
                 </a>
-                <a href="#">
+                <a href="https://google.com">
                   <i className="fa fab-google-plus" />
                 </a>
               </span>
